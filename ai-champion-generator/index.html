@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI챔피언 데이터분석 문제 자동 생성기</title>
+  <link rel="stylesheet" href="/styles/main.css">
+
+  <!-- CDN Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">🏆 AI챔피언</div>
+    <h1>데이터분석 문제 자동 생성기</h1>
+    <p class="subtitle">
+      CSV 파일을 업로드하면 데이터를 자동 분석하여 그린 수준의 실습 문제 5개와<br>
+      예시 정답 산출물을 생성하고 ZIP 파일로 다운로드합니다.
+    </p>
+  </div>
+</header>
+
+<main>
+
+  <!-- ① CSV 업로드 -->
+  <section class="card" id="upload-section">
+    <h2>📁 CSV 파일 업로드</h2>
+    <div class="upload-box" id="upload-box">
+      <div class="upload-icon">📂</div>
+      <p>CSV 파일을 여기에 드래그하거나 클릭하여 선택하세요</p>
+      <p class="upload-hint">UTF-8 인코딩 · 최대 10MB · 첫 번째 행은 헤더 · 한글 컬럼명 지원</p>
+      <input type="file" id="file-input" accept=".csv" hidden>
+      <button class="btn btn-secondary" id="select-file-btn">파일 선택</button>
+      <button class="btn btn-outline" id="load-sample-btn">샘플 데이터 사용</button>
+    </div>
+    <div id="file-info" class="file-info hidden"></div>
+  </section>
+
+  <!-- ② 데이터 미리보기 -->
+  <section class="card hidden" id="preview-section">
+    <h2>👁️ 데이터 미리보기 <span style="font-size:.85rem;font-weight:400;color:#64748b">(상위 10행)</span></h2>
+    <div id="preview-container"></div>
+  </section>
+
+  <!-- ③ 프로파일링 결과 -->
+  <section class="card hidden" id="profile-section">
+    <h2>🔍 데이터 프로파일링 결과</h2>
+    <div id="profile-container"></div>
+  </section>
+
+  <!-- ④ 문제 생성 시작 -->
+  <section class="card hidden" id="generate-section">
+    <h2>⚙️ 문제 생성</h2>
+    <p style="color:#64748b;margin-bottom:20px">데이터 분석이 완료되었습니다. 버튼을 클릭하면 문제 5개를 미리볼 수 있습니다.</p>
+    <button class="btn btn-primary btn-large" id="generate-btn">🔍 문제 미리보기</button>
+  </section>
+
+  <!-- ⑤ 문제 미리보기 -->
+  <section class="card hidden" id="problem-preview-section">
+    <h2>📋 생성된 문제 미리보기</h2>
+    <p style="color:#64748b;margin-bottom:20px">아래 문제를 확인하고 이대로 산출물을 생성하려면 <strong>확인</strong> 버튼을 누르세요.</p>
+    <div id="problem-preview-container"></div>
+    <div style="display:flex;gap:12px;margin-top:24px;flex-wrap:wrap">
+      <button class="btn btn-success btn-large" id="confirm-btn">✅ 확인 — 산출물 생성 시작</button>
+      <button class="btn btn-secondary" id="regenerate-btn" style="margin-top:0">🔄 다시 생성</button>
+    </div>
+  </section>
+
+  <!-- ⑥ 생성 로그 -->
+  <section class="card hidden" id="log-section">
+    <h2>📋 생성 로그</h2>
+    <div id="log-container"></div>
+  </section>
+
+  <!-- ⑦ 다운로드 -->
+  <section class="card hidden" id="download-section">
+    <h2>📦 다운로드</h2>
+    <p style="color:#64748b;margin-bottom:20px">모든 파일이 생성되었습니다. ZIP 파일로 다운로드하세요.</p>
+    <button class="btn btn-success btn-large" id="download-btn">⬇️ exam_package.zip 다운로드</button>
+  </section>
+
+</main>
+
+<footer>
+  AI챔피언 데이터분석 문제 자동 생성기 · 브라우저 전용 처리 · 데이터는 서버로 전송되지 않습니다
+</footer>
+
+<script type="module" src="/src/app.js"></script>
+</body>
+</html>

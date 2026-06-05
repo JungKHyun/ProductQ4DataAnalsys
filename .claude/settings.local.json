@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"from champion.profiler import profile_dataframe; from champion.problem_gen import generate_problems; from champion.artifact_gen import generate_all_artifacts; from champion.grading_gen import generate_grading_rubric; from champion.packager import package_all; print\\('모든 모듈 임포트 성공'\\)\")",
+      "Bash(python -c \"from champion.profiler import profile_dataframe; from champion.problem_gen import generate_problems; from champion.artifact_gen import generate_all_artifacts; from champion.grading_gen import generate_grading_rubric; from champion.packager import package_all; print\\('OK'\\)\")",
+      "Bash(python -c \"import champion_app; print\\('champion_app OK'\\)\")"
+    ]
+  }
+}

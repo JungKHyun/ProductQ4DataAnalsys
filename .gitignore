@@ -1,0 +1,16 @@
+# API 키 - 절대 커밋하지 말 것
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.mypy_cache/
+
+# 임시 산출물
+output/
+*.zip
+
+# OS
+.DS_Store
+Thumbs.db

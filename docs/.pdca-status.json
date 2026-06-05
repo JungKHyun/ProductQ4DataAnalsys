@@ -1,0 +1,133 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2026-06-04T17:19:02.329Z",
+  "activeFeatures": [
+    "20260603_데이터분석문제제작",
+    "champion"
+  ],
+  "primaryFeature": "20260603_데이터분석문제제작",
+  "features": {
+    "20260603_데이터분석문제제작": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-06-03T05:45:59.243Z",
+        "lastUpdated": "2026-06-04T17:19:02.329Z"
+      },
+      "lastFile": "c:\\work\\20260603_데이터분석문제제작\\champion_app.py"
+    },
+    "champion": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-06-04T17:13:11.978Z",
+        "lastUpdated": "2026-06-04T17:17:46.787Z"
+      },
+      "lastFile": "c:\\work\\20260603_데이터분석문제제작\\champion\\packager.py"
+    }
+  },
+  "pipeline": {
+    "currentPhase": 1,
+    "level": "Dynamic",
+    "phaseHistory": []
+  },
+  "session": {
+    "startedAt": "2026-06-03T05:41:14.326Z",
+    "onboardingCompleted": false,
+    "lastActivity": "2026-06-04T17:19:02.329Z"
+  },
+  "history": [
+    {
+      "timestamp": "2026-06-03T05:45:59.243Z",
+      "feature": "20260603_데이터분석문제제작",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-06-03T05:47:11.362Z",
+      "feature": "20260603_데이터분석문제제작",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-06-03T05:48:47.793Z",
+      "feature": "20260603_데이터분석문제제작",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-06-03T05:48:55.991Z",
+      "feature": "20260603_데이터분석문제제작",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-06-03T05:49:01.325Z",
+      "feature": "20260603_데이터분석문제제작",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-06-04T15:11:54.224Z",
+      "feature": "20260603_데이터분석문제제작",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-06-04T15:27:08.645Z",
+      "feature": "20260603_데이터분석문제제작",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-06-04T17:13:11.978Z",
+      "feature": "champion",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-06-04T17:13:36.250Z",
+      "feature": "champion",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-06-04T17:14:19.156Z",
+      "feature": "champion",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-06-04T17:15:56.961Z",
+      "feature": "champion",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-06-04T17:16:53.403Z",
+      "feature": "champion",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-06-04T17:17:46.787Z",
+      "feature": "champion",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-06-04T17:19:02.329Z",
+      "feature": "20260603_데이터분석문제제작",
+      "phase": "do",
+      "action": "updated"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "ai-champion-generator",
+  "version": "1.0.0",
+  "description": "AI챔피언 데이터분석 문제 자동 생성기",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-basic-ssl": "^1.1.0",
+    "vite": "^5.0.0"
+  },
+  "devDependencies": {}
+}
